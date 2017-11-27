@@ -1,0 +1,15 @@
+html
+	head
+		title Add
+	include navbar.pug
+	style
+		include pug.css
+	body
+		h1 This is a bulletin board!
+	
+
+	form(method="POST" action="add")
+		input(type="text" name = "title" placeholder="Message Title")
+		input(type="text" name = "stuff" placeholder="Body")
+		input(type="submit" value="submit")
+

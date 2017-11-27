@@ -1,0 +1,15 @@
+html
+	head
+		title Add
+	include navbar.pug
+	style
+		include pug.css
+	body
+		h1 The messages posted:
+
+		- for (var i = 0; i < allMessages.length; i++) 
+				li #{allMessages[i].title} : #{allMessages[i].body}
+
+
+	
+
